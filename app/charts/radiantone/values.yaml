@@ -11,6 +11,12 @@ fid:
     tenantname: duploservices-nike-dev02
   zk:
     clusterName: "nike-dev02"
+  metrics:
+    enabled: true
+    pushGateway: "http://prometheus-pushgateway.duploservices-nike-svc.svc.cluster.local:9091"
+    fluentd:
+      enabled: true
+      elasticsearchHost: "elasticsearch-master.duploservices-nike-svc.svc.cluster.local"
   affinity:
     podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
@@ -21,12 +27,6 @@ fid:
             values:
             - fid
         topologyKey: kubernetes.io/hostname
-    metrics:
-      enabled: true
-      pushGateway: "http://prometheus-pushgateway.duploservices-nike-svc.svc.cluster.local:9091"
-      fluentd:
-        enabled: true
-        elasticsearchHost: "elasticsearch-master.duploservices-nike-svc.svc.cluster.local"
   zookeeper:
     nodeSelector:
       tenantname: duploservices-nike-dev02
