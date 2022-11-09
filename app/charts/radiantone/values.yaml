@@ -16,7 +16,7 @@ fid:
     pushGateway: "http://prometheus-pushgateway.duploservices-nike-svc.svc.cluster.local:9091"
     fluentd:
       enabled: true
-      elasticsearchHost: "elasticsearch-master.duploservices-nike-svc.svc.cluster.local"
+      elasticSearchHost: "elasticsearch-master.duploservices-nike-svc.svc.cluster.local"
   affinity:
     podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
