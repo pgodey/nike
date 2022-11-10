@@ -27,6 +27,11 @@ fid:
             values:
             - fid
         topologyKey: kubernetes.io/hostname
+  cronjob:
+    migration:
+      enabled: true
+      s3: "s3://duploservices-nike-dev02-r1-backups-967346104358"
+    
   zookeeper:
     nodeSelector:
       tenantname: duploservices-nike-dev02
