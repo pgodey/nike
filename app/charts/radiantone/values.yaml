@@ -37,5 +37,6 @@ fid:
     hooks_sa:
       enabled: true
   zookeeper:
+    fullnameOverride: zookeeper
     nodeSelector:
       tenantname: duploservices-nike-dev02
