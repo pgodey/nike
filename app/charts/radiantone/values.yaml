@@ -1,4 +1,5 @@
 fid:
+  fullnameOverride: fid
   image:
     tag: "7.4.2"
   replicaCount: 2
@@ -35,7 +36,6 @@ fid:
   hooks:
     hooks_sa:
       enabled: true
-    
   zookeeper:
     nodeSelector:
       tenantname: duploservices-nike-dev02
