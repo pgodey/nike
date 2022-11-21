@@ -10,6 +10,17 @@ fid:
     zookeeper: true
   nodeSelector:
     tenantname: duploservices-nike-dev02
+  resources:
+    limits:
+      cpu: 2
+      memory: 2Gi
+    requests:
+      cpu: 1
+      memory: 1Gi
+  persistence:
+    enabled: true
+    storageClass: gp2
+    size: 30Gi
   zk:
     clusterName: "nike-dev02"
   metrics:
