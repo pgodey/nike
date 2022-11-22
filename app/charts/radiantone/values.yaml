@@ -43,7 +43,7 @@ fid:
     migration:
       enabled: true
       s3: "s3://duploservices-nike-dev02-r1-backups-967346104358"
-      schedule: "* 0 * * *"
+      schedule: "30 * * * *"
   hooks:
     hooks_sa:
       enabled: true
