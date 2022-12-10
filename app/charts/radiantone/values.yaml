@@ -1,4 +1,6 @@
 fid:
+  service:
+    type: NodePort
   fullnameOverride: fid
   image:
     tag: "7.4.3"
